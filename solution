@@ -1,0 +1,31 @@
+class Solution {
+    public int[] twoSum(int[] nums, int target) {
+        
+        //returns an int array
+        int thisTarget = target;
+        int theseNums[] = nums;
+        int solution[] = new int[2];
+        
+        //System.out.print(Arrays.toString(theseNums));
+        
+        for (int i = 0; i < theseNums.length; i++){
+            for(int j = 0; j < theseNums.length-1; j++){
+                if(i==j){
+                    j++;
+                }
+                if(theseNums[i]+theseNums[j]==thisTarget){
+                    solution[0] = i;
+                    solution[1] = j;
+                }
+                //if they're the same number
+                else{
+                    
+                }
+            }
+            
+        }
+        
+        return solution;
+        
+    }
+}
